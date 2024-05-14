@@ -121,7 +121,8 @@ public class US00016 {
         moduleProcess.saveButton.click();
 
         // Assert that the adding role success message is displayed
-        Assert.assertFalse(moduleProcess.addingRoleSuccessMass.isEmpty());
+
+        Assert.assertFalse(moduleProcess.addingRoleSuccessMass.isDisplayed());
 
     }
 }

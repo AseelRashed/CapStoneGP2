@@ -95,12 +95,14 @@ public class HomePage {
     }
 
     public void mempershipclick() {
+        log= new LogInPage();
         log.defaultLogin();
         //Click on "Mepership" icon on the side menu.
         mempership.click();
     }
 
     public void clickSliderButton() {
+        log= new LogInPage();
         log.defaultLogin();
         // Click on the slider button.
         slider.click();

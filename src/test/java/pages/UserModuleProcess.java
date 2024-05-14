@@ -89,7 +89,7 @@ public class UserModuleProcess {
     public WebElement checkMark;
 
     @FindBy(xpath = "//p[normalize-space()='New role added for this user successfuly']")
-    public List<WebElement> addingRoleSuccessMass;
+    public WebElement addingRoleSuccessMass;
 
 
 
