@@ -41,7 +41,7 @@ public class UserModuleProcess {
     public WebElement registerButton;
 
     @FindBy(xpath = "//div[@class='toast-header bg-success text-white']")
-    public List<WebElement> successMasseg;
+    public WebElement successMasseg;
 
     @FindBy(xpath = "//button[normalize-space()='Close']")
     public WebElement cancelButton;
@@ -71,7 +71,7 @@ public class UserModuleProcess {
     public WebElement confirmButtom;
 
     @FindBy(xpath = "//div[@class='callout callout-success']")
-    public List<WebElement> resetPassSuccessMass;
+    public WebElement resetPassSuccessMass;
 
     @FindBy(xpath = "//button[normalize-space()='Close']")
     public WebElement closeButtonResetPass;

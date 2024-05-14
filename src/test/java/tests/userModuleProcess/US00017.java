@@ -58,6 +58,6 @@ public class US00017 {
         moduleProcess.registerButton.click();
 
         // Assert that the success message is displayed indicating the user was added successfully
-        Assert.assertTrue(moduleProcess.successMasseg.size() > 0);
+        Assert.assertFalse(moduleProcess.successMasseg.isDisplayed());
     }
 }

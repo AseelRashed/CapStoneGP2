@@ -118,7 +118,7 @@
                 <argLine>-Dfile.encoding=UTF-8</argLine>
                 <useFile>false</useFile>
                 <includes>
-                    <include>tests/companyProcess/US0006.java</include> <!-- Specify the pages class to run here -->
+                    <include>tests/companyProcess/US00015.java</include> <!-- Specify the pages class to run here -->
                 </includes>
                 <testFailureIgnore>true</testFailureIgnore>
                 <suiteXmlFiles>testng.xml</suiteXmlFiles>

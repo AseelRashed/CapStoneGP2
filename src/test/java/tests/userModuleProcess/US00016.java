@@ -4,6 +4,7 @@ import org.testng.Assert; // Import TestNG assertion methods
 import org.testng.annotations.Test; // Import TestNG annotation for test methods
 import pages.LogInPage; // Import LogInPage class for logging in
 import pages.UserModuleProcess; // Import UserModuleProcess class for user module actions
+import utilities.Driver;
 import utilities.ReusableMethods; // Import ReusableMethods class for reusable actions
 
 import static org.testng.AssertJUnit.assertTrue; // Import TestNG assertion method for boolean conditions
@@ -15,18 +16,10 @@ public class US00016 {
     UserModuleProcess moduleProcess = new UserModuleProcess();
 
     // Test method to assert the default role
-    @Test
-    public void assertDefaultRole() throws InterruptedException {
-        // Login with default credentials
-        logInPage.defaultLogin();
+    @Test(priority = 2)
+    public void assertDefaultRole() {
 
-        // Click on the collapse button
-        moduleProcess.button.click();
-
-        // Click on the user button after waiting for it to be clickable
-        ReusableMethods.waitForClickablility(moduleProcess.userButton, 2).click();
-
-        // Click on the first username index
+        ReusableMethods.waitFor(1);
         moduleProcess.firstUsernameIndex.click();
 
         // Assert that the default role is displayed
@@ -34,13 +27,9 @@ public class US00016 {
     }
 
     // Test method to assert that username can be changed
-    @Test
-    public void assertUsernameItCanChanged() throws InterruptedException {
-        // Login with default credentials
-        logInPage.defaultLogin();
+    @Test(priority = 3)
+    public void assertUsernameItCanChanged() {
 
-        // Click on the collapse button
-        moduleProcess.button.click();
 
         // Click on the user button after waiting for it to be clickable
         ReusableMethods.waitForClickablility(moduleProcess.userButton, 2).click();
@@ -73,13 +62,9 @@ public class US00016 {
     }
 
     // Test method to reset password
-    @Test
-    public void ResetPassword() throws InterruptedException {
-        // Login with default credentials
-        logInPage.defaultLogin();
+    @Test(priority = 1)
+    public void ResetPassword() {
 
-        // Click on the collapse button
-        moduleProcess.button.click();
 
         // Click on the user button after waiting for it to be clickable
         ReusableMethods.waitForClickablility(moduleProcess.userButton, 2).click();
@@ -93,27 +78,29 @@ public class US00016 {
         // Confirm the reset action
         moduleProcess.confirmButtom.click();
 
+        ReusableMethods.waitFor(1);
+
         // Assert that the reset password success message is displayed
-        Assert.assertTrue(moduleProcess.resetPassSuccessMass.size() > 0);
+        Assert.assertTrue(moduleProcess.resetPassSuccessMass.isDisplayed());
 
         // Close the reset password confirmation dialog
         moduleProcess.closeButtonResetPass.click();
+
+
     }
 
     // Test method to add a role
     @Test
     public void addRole() {
+
         // Login with default credentials
         logInPage.defaultLogin();
 
-        // Click on the collapse button after waiting for it to be clickable
-        ReusableMethods.waitForClickablility(moduleProcess.button, 2).click();
-
-        // Click on the user button
-        moduleProcess.userButton.click();
-
         // Wait for 1 second
         ReusableMethods.waitFor(1);
+
+        moduleProcess.button.click();
+        moduleProcess.userButton.click();
 
         // Click on the first username index
         moduleProcess.firstUsernameIndex.click();
@@ -134,6 +121,7 @@ public class US00016 {
         moduleProcess.saveButton.click();
 
         // Assert that the adding role success message is displayed
-        Assert.assertTrue(moduleProcess.addingRoleSuccessMass.size() > 0);
+        Assert.assertFalse(moduleProcess.addingRoleSuccessMass.isEmpty());
+
     }
 }

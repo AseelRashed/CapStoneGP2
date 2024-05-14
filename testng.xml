@@ -2,17 +2,11 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="All Test Suite">
     <test verbose="2" preserve-order="true"
-          name="/Users/ziad53/IdeaProjects/SDA2024-Capstone/src/test/java/tests/companyProcess/US0006.java">
+          name="C:/Users/lenovo/IdeaProjects/SDACapStoneGP2/src/test/java/tests/userModuleProcess/US00015.java">
         <classes>
-            <class name="tests.companyProcess.US0006">
+            <class name="tests.userModuleProcess.US00015">
                 <methods>
-                    <include name="TC0006_01"/>
-                    <include name="TC0006_02"/>
-                    <include name="TC0006_03"/>
-                    <include name="TC0006_04"/>
-                    <include name="TC0006_05"/>
-                    <include name="TC0006_06"/>
-                    <include name="TC0006_07"/>
+                    <include name="asserTheUserExists"/>
                 </methods>
             </class>
         </classes>
