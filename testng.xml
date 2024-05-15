@@ -1,3 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="All Test Suite"><test verbose="2" preserve-order="true" name="C:/Users/Danah/IdeaProjects/SDACapStoneGP2/src/test/java/tests/RemoteUnit"><classes><class name="tests.RemoteUnit.US_0010"><methods><include name="TC0010_01"/><include name="TC0010_02"/></methods></class><class name="tests.RemoteUnit.US_0011"><methods><include name="TC0011_01"/><include name="TC0011_02"/><include name="TC0011_03"/><include name="TC0011_4"/></methods></class><class name="tests.RemoteUnit.US_0012"><methods><include name="TC0012_01"/><include name="TC0012_02"/></methods></class></classes></test></suite>
+
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="C:/Users/Danah/IdeaProjects/SDACapStoneGP2/src/test/java/tests/RemoteUnit">
+        <classes><class name="tests.RemoteUnit.US_0010">
+            <methods>
+                <include name="TC0010_01"/><include name="TC0010_02"/>
+            </methods>
+        </class>
+            <class name="tests.RemoteUnit.US_0011">
+                <methods><include name="TC0011_01"/>
+                    <include name="TC0011_02"/>
+                    <include name="TC0011_03"/>
+                    <include name="TC0011_4"/>
+                </methods>
+            </class>
+            <class name="tests.RemoteUnit.US_0012">
+                <methods><include name="TC0012_01"/>
+                    <include name="TC0012_02"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

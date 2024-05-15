@@ -1,4 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-05-14T12:20:35 AST" name="All Test Suite" finished-at="2024-05-14T12:21:42 AST" duration-ms="67003">
+    <groups>
+    </groups>
+    <test started-at="2024-05-14T12:20:35 AST" name="C:/Users/lenovo/IdeaProjects/SDACapStoneGP2/src/test/java/tests/userModuleProcess/US00015.java" finished-at="2024-05-14T12:21:42 AST" duration-ms="67003">
+      <class name="tests.userModuleProcess.US00015">
+        <test-method signature="asserTheUserExists()[pri:0, instance:tests.userModuleProcess.US00015@39a8312f]" started-at="2024-05-14T12:20:35 AST" name="asserTheUserExists" finished-at="2024-05-14T12:21:42 AST" duration-ms="66966" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- asserTheUserExists -->
+      </class> <!-- tests.userModuleProcess.US00015 -->
+    </test> <!-- C:/Users/lenovo/IdeaProjects/SDACapStoneGP2/src/test/java/tests/userModuleProcess/US00015.java -->
+=======
 <testng-results ignored="0" total="8" passed="0" failed="8" skipped="0">
   <reporter-output>
   </reporter-output>
@@ -555,5 +571,6 @@ at java.base/java.lang.Thread.run(Thread.java:842)
         </test-method> <!-- TC0011_4 -->
       </class> <!-- tests.RemoteUnit.US_0011 -->
     </test> <!-- C:/Users/Danah/IdeaProjects/SDACapStoneGP2/src/test/java/tests/RemoteUnit -->
+>>>>>>> e7f14090fc5c7154f617fa19deb0406f41c1e9a7
   </suite> <!-- All Test Suite -->
 </testng-results>

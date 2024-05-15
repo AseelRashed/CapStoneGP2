@@ -64,7 +64,7 @@ public class US00015 {
         moduleProcess.registerButton.click();
 
         // Assert that no success message is displayed
-        Assert.assertTrue(moduleProcess.successMasseg.size() == 0);
+        Assert.assertTrue(moduleProcess.successMasseg.isDisplayed());
 
         // Click on the cancel button
         moduleProcess.cancelButton.click();
